@@ -45,12 +45,12 @@ def run(songs)
   loop do
     puts "Please enter a command:"
     answer = gets.chomp
-    case answer
-      when "list"
+    case
+      when answer == "list"
         list(songs)
-      when "play"
+      when answer ==  "play"
         play(songs)
-      when "help"
+      when answer ==  "help"
         help
       break if answer == "exit"
     end
